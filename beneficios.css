@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #021c2b, #053d5c);
+    color: white;
+}
+
+.topo {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.topo h1 {
+    font-size: 2.8rem;
+}
+
+.topo p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.secao {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.secao h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.secao ul {
+    list-style: none;
+}
+
+.secao li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.secao li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #00d4ff;
+}
+
+.azul {
+    background: rgba(0, 212, 255, 0.08);
+    border-radius: 20px;
+}
+
+.destaque {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #00d4ff;
+}
+
+.cta {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.btn-matricula {
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 40px;
+    background: #00d4ff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-matricula:hover {
+    transform: scale(1.08);
+    background: #00d4ff;
+}
+
+.footer-voltar {
+    text-align: center;
+    padding: 60px 20px 80px;
+}
+
+.voltar:hover {
+    opacity: 1;
+    
+
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ESTATÍSTICAS */
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 220px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: #00d4ff;
+}
+
+.stat-card p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+/* BOTÃO WHATSAPP */
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border-radius: 40px;
+    background: #25D366; /* verde oficial WhatsApp */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.08);
+    background: #1ebe5d;
+}
+
+.btn-whatsapp .icon {
+    font-size: 1.2rem;
+}
